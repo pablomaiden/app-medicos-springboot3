@@ -8,15 +8,15 @@ import med.voll.api.endereco.DadosEndereco;
 
 public record DadosCadastroMedico(
 
-        @NotBlank
+        @NotBlank(message = "{nome.obrigatorio}")
         String nome,
-        @NotBlank
-        @Email
+        @NotBlank(message = "{email.obrigatorio}")
+        @Email(message = "Formato do email é inválido")
         String email,
 
         @NotBlank
         String telefone,
-        @NotBlank(message = "O CRM não pode ser vazio")
+        @NotBlank(message = "{crm.obrigatorio}")
         @Pattern(regexp = "\\d{4,6}", message = "O CRM precisar ter entre 4 e 6 números")
         String crm,
         Especialidade especialidade,
