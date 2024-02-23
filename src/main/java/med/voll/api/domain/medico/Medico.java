@@ -3,9 +3,6 @@ package med.voll.api.domain.medico;
 import jakarta.persistence.*;
 import lombok.*;
 import med.voll.api.domain.endereco.Endereco;
-import med.voll.api.medicos.DadosAtualizacaoMedico;
-import med.voll.api.medicos.DadosCadastroMedico;
-import med.voll.api.medicos.Especialidade;
 
 @Entity(name="medicos")
 @Table(name = "Medicos")
