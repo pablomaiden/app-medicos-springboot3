@@ -43,7 +43,7 @@ public class AgendaDeConsultas {
         }
 
 
-        var consulta = new Consulta(null, medico, paciente, dados.data());
+        var consulta = new Consulta(null, medico, paciente, dados.data(), null);
         return consultaRepository.save(consulta);
     }
 
