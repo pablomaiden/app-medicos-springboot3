@@ -1,5 +1,11 @@
-# app-medicos-springboot3
+# Aplicação em SpringBoot 3 para uma clinica médica
 Esta é uma aplicação para estudos sobre o Spring Boot 3
+
+## O que está incluso nessa aplicação?
+### Conceitos de Controller
+### Segurança com o Spring Security OAuth2.0
+### Teste unitário TDD
+### Documentação com o Swagger
 
 ## Build do projeto
 
